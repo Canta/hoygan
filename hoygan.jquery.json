@@ -1,0 +1,33 @@
+{
+	"name": "hoygan",
+	"title": "jQuery HOYGAN plugin",
+	"description": "jQuery plugin for HOYGAN translations.",
+	"keywords": [
+		"HOYGAN",
+		"translation"
+	],
+	"version": "0.1.0",
+	"author": {
+		"name": "Daniel Cantarín",
+		"url": "https://github.com/Canta"
+	},
+	"maintainers": [
+		{
+			"name": "Daniel Cantarín",
+			"email": "omega_canta@yahoo.com",
+			"url": "http://www.danielcantarin.com.ar"
+		}
+		],
+		"licenses": [
+		{
+			"type": "GPLv3",
+			"url": "https://raw.github.com/Canta/hoygan/master/LICENSE"
+		}
+	],
+	"homepage": "https://github.com/Canta/hoygan",
+	"docs": "https://github.com/Canta/hoygan",
+	"download": "http://code.jquery.com/#hoygan",
+	"dependencies": {
+		"jquery": ">=1.7"
+	}
+}
