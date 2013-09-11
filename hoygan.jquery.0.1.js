@@ -174,3 +174,7 @@ jQuery.fn.hoygan = function(){
 	
 	return this;
 }
+
+String.prototype.hoygan = function(){
+	return $.hoygan(this);
+}
