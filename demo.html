@@ -12,13 +12,24 @@
 				width:100%;
 				height:30%;
 			}
+			#lorem{
+				margin-top:10px; 
+				border: black thin inset;
+			}
 		</style>
 	</head>
 	<body>
 		<textarea id="original" >Hola cómo te vá </textarea>
 		<br/>
-		<p style="text-align:center;"><input type="button" value=" traducir " onclick="$('#traduccion').val($.hoygan($('#original').val()))" /></p>
+		<p style="text-align:center;"><input type="button" value=" Test hoygan with String input " onclick="$('#traduccion').val($.hoygan($('#original').val()))" /></p>
 		<textarea id="traduccion" ></textarea>
-		<br/>
+		<hr/>
+		
+		<p style="text-align:center;">
+			<input type="button" value=" Test applying hoygan to HTML objects with jQuery selectors " onclick="$('#lorem').hoygan()" />
+			<div id="lorem">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+			</div>
+		</p>
 	</body>
 </html>

@@ -83,8 +83,8 @@ jQuery.hoygan = function(str, rnd){
 	}
 	
 	
-	//10) entre una y 10 letras NO están en mayúsculas;
-	cuantas = semirand(10);
+	//10) entre una y el 10% de letras NO están en mayúsculas;
+	cuantas = semirand( parseInt(texto.length * 0.1) );
 	for (var i = 0; i < cuantas; i++){
 		i2 = parseInt(Math.random() * texto.length + 1);
 		if (i2 > texto.length - 1) { i2 = texto.length -1; }
@@ -163,3 +163,14 @@ jQuery.hoygan.epigrafe = function(){
 	return devolver;
 }
 
+jQuery.fn.hoygan = function(){
+	this.each(
+		function(index, obj) {
+			obj = $(obj);
+			obj.val($.hoygan(obj.val()));
+			obj.text($.hoygan(obj.text()));
+		}
+	);
+	
+	return this;
+}
