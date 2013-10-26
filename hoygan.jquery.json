@@ -6,7 +6,7 @@
 		"HOYGAN",
 		"translation"
 	],
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": {
 		"name": "Daniel Cantarín",
 		"url": "https://github.com/Canta"
@@ -20,13 +20,13 @@
 		],
 		"licenses": [
 		{
-			"type": "GPLv3",
+			"type": "GPL",
 			"url": "https://raw.github.com/Canta/hoygan/master/LICENSE"
 		}
 	],
 	"homepage": "https://github.com/Canta/hoygan",
 	"docs": "https://github.com/Canta/hoygan",
-	"download": "https://github.com/Canta/hoygan",
+	"download": "https://raw.github.com/Canta/hoygan/master/hoygan.jquery.latest.js",
 	"dependencies": {
 		"jquery": ">=1.7"
 	}
